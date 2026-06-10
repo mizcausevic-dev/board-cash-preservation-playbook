@@ -123,16 +123,69 @@ function shell(title: string, path: string, body: string, description: string) {
   <body>
     <div class="wrap">
       ${body}
+      ${renderSharedDepth()}
       <div class="footer">
         <span>${productTitle}</span>
         <a href="${domain}">${domain.replace("https://", "")}</a>
-        <a href="https://github.com/mizcausevic-dev/">GitHub</a>
+        <a href="https://github.com/mizcausevic-dev/board-cash-preservation-playbook">GitHub</a>
+        <a href="https://portfolio.kineticgain.com/">Portfolio</a>
         <a href="https://www.linkedin.com/in/mirzacausevic/">LinkedIn</a>
         <a href="https://kineticgain.com/">Kinetic Gain</a>
       </div>
     </div>
   </body>
 </html>`;
+}
+
+function renderSharedDepth() {
+  return `<section class="section">
+      <span class="eyebrow">Product depth</span>
+      <h2>From budget pressure to board-safe preservation decisions.</h2>
+      <p class="lede">The playbook gives executives a controlled way to preserve cash without turning every cut into hidden operational risk. It keeps the business story, technical proof, and go-to-market narrative in one reusable packet.</p>
+      <div class="grid">
+        <article class="card">
+          <div class="chip">Buyer value</div>
+          <h3>Cash preservation becomes explainable.</h3>
+          <p>Leadership can see which lanes should freeze, which systems must be ring-fenced, and which moves need stronger proof before the board approves them.</p>
+        </article>
+        <article class="card">
+          <div class="chip">Technical proof</div>
+          <h3>One model powers every artifact.</h3>
+          <p>The same TypeScript scoring model produces CLI output, JSON payloads, static HTML routes, screenshots, and verification notes, so the story does not drift between surfaces.</p>
+        </article>
+        <article class="card">
+          <div class="chip">GTM story</div>
+          <h3>Cost control without vague cuts.</h3>
+          <p>This is positioned for CEOs, CFOs, operators, and investors who need a defensible preservation plan instead of another spreadsheet of disconnected reductions.</p>
+        </article>
+      </div>
+    </section>
+    <section class="section">
+      <span class="eyebrow">What these repos have in common</span>
+      <h2>Every Kinetic Gain surface resolves into proof, owner, and next action.</h2>
+      <div class="grid">
+        <article class="card">
+          <div class="chip">Risk signal</div>
+          <h3>Pressure is explicit.</h3>
+          <p>Cash burn, fragility, continuity, and downside exposure are shown as decision signals before they become late-stage board surprises.</p>
+        </article>
+        <article class="card">
+          <div class="chip">Owner context</div>
+          <h3>Each move has an accountable audience.</h3>
+          <p>The packet ties every preservation lane to an owner, committee, and operating narrative instead of leaving accountability implied.</p>
+        </article>
+        <article class="card">
+          <div class="chip">Evidence packet</div>
+          <h3>The proof can travel.</h3>
+          <p>Routes, APIs, fixtures, docs, screenshots, and verification notes all describe the same modeled system, which makes the artifact useful to technical and non-technical reviewers.</p>
+        </article>
+        <article class="card">
+          <div class="chip">Next action</div>
+          <h3>Every lane ends in a decision.</h3>
+          <p>The surface is designed to answer what to freeze, protect, defer, hold, or revisit rather than simply describing the problem.</p>
+        </article>
+      </div>
+    </section>`;
 }
 
 function navLinks(path: string) {
